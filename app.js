@@ -1,7 +1,7 @@
 const express = require("express");
 require("dotenv").config();
 const cors = require("cors");
-const dogFacts = require("./dogfacts.js");
+const dogFacts = require("./dogfacts");
 
 const app = express();
 
