@@ -15,4 +15,6 @@ app.get("/all-facts", (req, res) => {
 	res.status(200).json(dogFacts);
 });
 
-app.listen(process.env.PORT || 9000);
+app.listen(process.env.PORT, () => {
+    console.log('Accede al servidor desde el puerto ' + process.env.PORT)
+  })
