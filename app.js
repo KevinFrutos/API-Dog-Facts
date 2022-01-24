@@ -6,6 +6,10 @@ const app = express()
 
 app.use(cors())
 
+app.get("/", (req, res) => {
+    res.status(200).send("Conectado!")
+})
+
 app.get("/all-facts", (req, res) => {
     res.status(200).json(dogFacts)
 })
