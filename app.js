@@ -1,7 +1,7 @@
-import express from "express";
-import cors from "cors";
-import {} from "dotenv/config";
-import dogFacts from "./dogfacts.js";
+const express = require("express");
+require("dotenv").config();
+const cors = require("cors");
+const dogFacts = require("./dogfacts.js");
 
 const app = express();
 
