@@ -1,9 +1,9 @@
 const express = require("express");
 require("dotenv").config();
 const cors = require("cors");
-const dogFacts = require("./dogfacts");
+//const dogFacts = require("./dogfacts");
 
-/*const dogFacts = [
+const dogFacts = [
 	{
 		fact: "All dogs can be traced back 40 million years ago to a weasel-like animal called the Miacis which dwelled in trees and dens. The Miacis later evolved into the Tomarctus, a direct forbear of the genus Canis, which includes the wolf and jackal as well as the dog.",
 	},
@@ -787,7 +787,7 @@ const dogFacts = require("./dogfacts");
 	{
 		fact: "A dog’s heart beats up to 120 times per minute, or 50 faster than the average human heartbeat of 80 times per minute.",
 	},
-];*/
+];
 
 /*Data from: https://github.com/DukeNgn/Dog-facts-API/blob/master/data.json*/
 
@@ -800,7 +800,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/all-facts", (req, res) => {
-	res.status(200).json(dogFacts.data);
+	res.status(200).json(dogFacts);
 });
 
 app.listen(process.env.PORT, () => {
