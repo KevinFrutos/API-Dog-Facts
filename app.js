@@ -800,7 +800,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/all-facts", (req, res) => {
-	res.status(200).json(dogFacts);
+	res.status(200).json(dogFacts.data);
 });
 
 app.listen(process.env.PORT, () => {
